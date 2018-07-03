@@ -1,5 +1,5 @@
 {
-  "name": "subdomain-handler",
+  "name": "subdomain-wizard",
   "version": "1.0.0",
   "description": "An Express middleware to delegate routes to subdomains",
   "main": "index.js",
