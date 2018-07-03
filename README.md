@@ -1,6 +1,7 @@
 # Subdomains for Express
 Easily manage and delegate routes to certain subdomains.
 ## Installation
+`npm i subdomain-wizard --save`
 
 ## Usage
 Example express boilerplate:
