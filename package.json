@@ -1,11 +1,12 @@
 {
   "name": "subdomain-wizard",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "An Express middleware to delegate routes to subdomains",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": "github:pSnehanshu/subdomain-wizard",
   "keywords": [
     "subdomain",
     "express-subdomain",
