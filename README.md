@@ -1,7 +1,7 @@
 # Subdomains for Express
+[![NPM](https://nodei.co/npm/subdomain-wizard.png)](https://nodei.co/npm/subdomain-wizard/)
+
 Easily manage and delegate routes to certain subdomains.
-## Installation
-`npm i subdomain-wizard --save`
 
 ## Usage
 Example express boilerplate:
