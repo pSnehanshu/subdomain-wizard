@@ -43,4 +43,4 @@ If your domain is ending at a second level TLD like `.co.in`, then use `app.set(
 Refer [Express docs](https://expressjs.com/en/api.html#req.subdomains) for more information.
 
 ## Licensing
-Licensed under MIT License.
+Licensed under [MIT License](https://raw.githubusercontent.com/pSnehanshu/subdomain-wizard/master/LICENSE).
