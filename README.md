@@ -1,37 +1,32 @@
 # Subdomains for Express
 [![NPM](https://nodei.co/npm/subdomain-wizard.png)](https://nodei.co/npm/subdomain-wizard/)
 
-Easily manage and delegate routes to certain subdomains.
+Easily manage and delegate routes to subdomains.
 
 ## Usage
 Example express boilerplate:
 
-<pre>
-<code>
-var express = require('express')
-var subdomain = require('subdomain-wizard')
-var app = express() 
-</code>
-</pre>
+```javascript
+const express   = require('express')
+const subdomain = require('subdomain-wizard')
+const app       = express() 
+```
 
 Basic usage
 
-<pre>
-<code>
-app.get(subdomain('foo', function(req, res, next){
+```javascript
+app.get(subdomain('foo', function(req, res){
     res.send('Hello there')
 }))
 
 // Visit: foo.example.com
 // Hello there
-</code>
-</pre>
+```
 
 Use wildcard (`*`)
 
-<pre>
-<code>
-app.get(subdomain('*.foo', unction(req, res, next){
+```javascript
+app.get(subdomain('*.foo', function(req, res){
     res.send('Hello pretty')
 }))
 
@@ -40,8 +35,7 @@ app.get(subdomain('*.foo', unction(req, res, next){
 
 // Visit: bar.foo.example.com
 // Hello pretty
-</code>
-</pre>
+```
 
 ## Caveat
 If your domain is ending at a second level TLD like `.co.in`, then use `app.set('subdomain offset', 3)` before using `subdomain.`
