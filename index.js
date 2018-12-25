@@ -1,4 +1,4 @@
-module.exports = function(subdomain, fn){
+module.exports = function(subdomain, app, fn){
     if(!subdomain || typeof subdomain !== "string") {
     throw new Error("The first parameter must be a string representing the subdomain")
     }
