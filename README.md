@@ -15,7 +15,7 @@ const app       = express()
 Basic usage
 
 ```javascript
-app.get(subdomain('foo', function(req, res){
+app.get(subdomain('foo', app, function(req, res){
     res.send('Hello there')
 }))
 
