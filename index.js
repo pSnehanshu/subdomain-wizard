@@ -1,4 +1,4 @@
-module.exports = function(subdomain, fn){
+module.exports = function(subdomain, app, fn){
     if(!subdomain || typeof subdomain !== "string") {
     throw new Error("The first parameter must be a string representing the subdomain")
     }
@@ -10,6 +10,10 @@ module.exports = function(subdomain, fn){
   
     // The middleware
     return function(req, res, next){
+        var isSecondLevelDomain = (req.hostname.match(/\./g) || []).length >= 2 ? true : false
+        if(isSecondLevelDomain) {
+             app.set('subdomain offset', 3)
+        }
         var givenSubdomains = subdomain.split('.').reverse()
         var match = false, matchByAsterisk = false
   
